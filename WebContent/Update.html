@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update</title>
+<style>
+h2{color:black;}
+#a{
+background-color:#e6ac00;
+font-weight:bold;border:3px solid black;
+}
+#header {
+    background-color:#dfbe9f;
+    color:black;font-weight:bolder;
+    text-align:center;height:120px;
+    padding:32px;margin:2px;
+}
+#nav {
+    line-height:100px;font-size:25px;
+    background-color:grey;font-color:black;
+    height:580px;text-align:left;
+    width:160px;
+    float:left;border:1px solid grey;
+    padding:15px; 
+}
+#section {
+    width:1050px;height:530px;
+    float:left;background:url("sve3.png");background-repeat:no-repeat;background-align:center;
+    padding:40px;margin:2px;margin-color:black;background-size:320px;background-position:center;
+}
+#footer {
+    background-color:grey;
+    color:black;height:20px;
+    clear:both;font-size:20px;
+    text-align:center;
+    padding:5px; 
+}
+#di
+{
+width:40px;height:5px;
+background-color:#99ccff;
+text-color:white;radius:2px;
+text-decoration:none;
+}
+a
+{
+text-decoration:none;
+color:#000000;
+}
+</style>
+</head>
+<body id="a">
+<div id="nav">
+<b  title="NEW STOCK"><a  href="Enter.html">Enter Stock</a></b><br>
+<b  title="REMOVE STOCK"><a href="Remove.html">Remove Stock</a></b><br>
+<b  title="VIEW ORDERS"><a href="ViewOrders.html">View Orders</a></b><br>
+<b  title="QUERIES & SUGGESTIONS"><a href="ViewQueries.jsp">Queries/Feeds</a></b><br>
+<b  title="LOGOUT SESSION"><a href="Homepage.html">Logout</a></b><br>
+</div>
+<div id="section">
+<h1>Welcome for updating existing stock details.</h1>
+<form method="post" action="Update.jsp" autocomplete="off" accept-charset="utf-8">
+<table align="left"><h1><b>
+<th> OLD NAME       : <td><input type="text" maxlength="25" title="MEDICINE'S OLD NAME" name="Ol" placeholder=" OLD NAME"></input><tr><br>
+<th> NEW NAME       : <td><input type="text" maxlength="25" title="MEDICINE'S NEW NAME" name="Ne" placeholder=" NEW NAME"></input><tr><br>
+
+      <th> <input type="submit" value="UPDATE" name="Su"></input><th>      <input type="reset" value="RESET" name="Re"></input></b></h1></table>
+      </form></div>
+</div>
+<div id="footer"><marquee style="font-size:20px">Pharmacy Management Systems under the valuable guidance of PROF. M.PADMAVATAMMA Garu (BoS Chairman),
+Department Of Computer Science,MCA,SV University,Tirupati.</marquee>
+</div>
+</body>
+</html>

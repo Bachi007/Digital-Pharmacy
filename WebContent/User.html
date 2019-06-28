@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User</title>
+<style>
+#a{
+background-color:black;
+font-weight:bold;
+}
+#header {
+    background-color:#dfbe9f;
+	background-image:"sve3.png";
+    color:black;font-weight:bolder;
+    text-align:center;height:120px;
+    padding:32px;margin:2px;}
+#nav {
+    line-height:100px;font-size:25px;
+    background-color:#d9ffb3;font-color:black;
+    height:400px;text-align:center;
+    width:170px;
+    float:left;spacing:15px;
+    padding:15px; margin:2px;
+}
+#section {
+    width:1044px;height:350px;
+	background-color:#d9d9d9;
+    float:left;text-align:center;
+    padding:40px;margin:2px;
+}
+#footer {
+    background-color:black;
+    color:white;height:22px;
+    clear:both;font-size:25px;
+    text-align:center;
+    padding:7px; margin:2px;
+}
+a
+{text-decoration:none;}
+</style>
+</head>
+<body id="a">
+<div id="header" style="border:blue"><img src="sve3.png" height="150px" width="150px" align="left" title="SVU LOGO" ></img>
+<h1 title="UNIVERSITY & COLLEGE NAME">SRI VENKATESWARA UNIVERSITY <br>DIGITAL PHARMACY</h1>
+<h5 align="right">Tirupati-517502</h5>
+</div>
+<div id="nav">
+<b title="ADMIN LOGIN HERE"><u><a href="Admin.html">Admin Login</a></u></b><br>
+<b title="BACK TO HOME"><u><a href="Homepage.html">Homepage</a></u></b><br>
+</div>
+<div id="section">
+<h1>Welcome to USER'S Login page</h1><pre>
+<form action="PharmUser.jsp" method="post" accept-charset="utf-8">
+USERNAME :<input type="text" max="25"  title="USER'S USERNAME" name="Us" placeholder="Username"></input><br>
+PASSWORD :<input type="password" min="8" max="12"  title="USER'S PASSWORD" name="Pa" placeholder="Password"></input><br>
+    <input type="submit" value="SUBMIT" name="Su"></input>      <input type="reset" value="RESET" name="Re"></input><br>
+FOR ADMIN LOGIN <u><a href="Admin.html">CLICK HERE</a></u><br>
+IF YOU ARE A NEW USER <u><a href="Urf.html" onclick="uma()">REGISTER HERE</a></u></form>
+</pre>
+</div>
+<div id="footer"><marquee>DEPARTMENT OF COMPUTER SCIENCE</marquee>
+</div>
+<script>
+function uma()
+{
+window.alert("You are now redirected to USER'S registration page");
+}</script>
+</body>
+</html>

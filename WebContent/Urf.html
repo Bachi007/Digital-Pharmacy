@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Urf</title>
+<style>
+#a{
+background-color:black;
+font-weight:bold;
+}
+#header {
+    background-color:#dfbe9f;
+	background-image:"sve3.png";
+    color:black;font-weight:bolder;
+    text-align:center;height:120px;
+    padding:32px;margin:2px;
+
+}
+#nav {
+    line-height:100px;font-size:25px;
+    background-color:#d9ffb3;font-color:black;
+    height:400px;text-align:center;
+    width:170px;
+    float:left;spacing:15px;
+    padding:15px; margin:2px;
+}
+#section {
+    width:1116px;height:424px;
+	background-color:#d9d9d9;spacing:2px;
+    float:left;text-align:left;
+    padding:3px;margin:2px;
+}
+#footer {
+    background-color:black;
+    color:white;height:20px;
+    clear:both;font-size:20px;
+    text-align:center;
+    padding:5px; margin:2px;
+}
+a
+{text-decoration:none;}
+</style>
+</head>
+<body id="a">
+<div id="header" style="border:blue"><img src="sve3.png" height="150px" width="150px" align="left" title="SVU LOGO" ></img>
+<h1 title="UNIVERSITY & COLLEGE NAME">SRI VENKATESWARA UNIVERSITY <br> DIGITAL PHARMACY</h1>
+<h5 align="right">Tirupati-517502</h5>
+</div>
+<div id="nav">
+<b title="ADMIN LOGIN HERE"><u><a href="Admin.html">Admin Login</a></u></b><br>
+<b title="USER LOGIN HERE"><u><a href="User.html">User Login</a></u></b><br>
+<b title="BACK TO HOME"><u><a href="Homepage.html">Homepage</a></u></b><br>
+</div>
+<div id="section">
+<h2 align="center">Welcome to USER'S Registration Page</h2>
+<form method="post" action="Registration.jsp" autocomplete="off" accept-charset="utf-8"><pre>
+<table align="center">
+<th>PROFESSION      : <td><select  title="SELECT YOUR PROFESSION" name="Pr">
+<option value="STUDENT">STUDENT</option>
+<option value="TEACHING STAFF">TEACHING STAFF</option>
+<option value="NON-TEACHING STAFF">NON-TEACHING STAFF</option>
+</select><tr>
+<th>NAME            : <td><input type="text" maxlength="25" title="USER'S NAME" name="Na" placeholder="Name"></input><br> <tr>
+<th>GENDER          :<td><input type="radio" value="M" name="Ge">MALE <input type="radio" value="FM" name="Ge">FEMALE<br><tr>
+<th>AGE             :<td><input type="text" maxlength="3" title="USER'S AGE" name="Ag" placeholder="Age" ></input><br> <tr>
+<th>UNIV.ID         : <td><input type="text" maxlength="10" title="ROLL NUMBER/REGISTRATION NUMBER" name="Ro" placeholder="University Id"></input> <br><tr>
+<th>COLLEGE         : <td><select title="SELECT COLLEGE" name="Col">
+<option value="ENGINEERING ">ENGINEERING</option>
+<option value="CM & CS">CM and CS</option>
+<option value="SCIENCE">SCIENCE</option>
+</select><br><tr>
+<th>DEPARTMENT      :<td><select  title="SELECT YOUR DEPARTMENT" name="De">
+<option value="COMPUTERSCIENCE">COMPUTER SCIENCE</option>
+<option value="COMMERCE">COMMERCE</option>
+<option value="MANGEMENT">MANAGEMENT</option>
+<option value="EEE">EEE</option>
+<option value="CIVIL">CIVIL</option>
+<option value="MECHANICAL">MECHANICAL</option> 
+<option value="LAW">LAW</option> 
+</select>     <tr>
+<th>USERNAME        : <td><input type="text" maxlength="25" title="USER'S USERNAME" name="Us" placeholder="Username"></input><br> <tr>
+<th>PASSWORD        : <td><input type="password" maxlength="25" title="USER'S PASSWORD" name="Pa" placeholder="Password"></input><br> <tr>
+             
+		     	<th> <input type="submit" value="SUBMIT" name="Su"></input>      <th><input type="reset" value="RESET" name="Re"></input></table>
+</pre></form></div>
+<div id="footer"><marquee>DEPARTMENT OF COMPUTER SCIENCE</marquee>
+</div>
+</body>
+</html>

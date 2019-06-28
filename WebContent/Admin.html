@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<style>
+#a{
+background-color:black;
+font-weight:bold;
+}
+#header {
+    background-color:#dfbe9f;
+    color:black;font-weight:bolder;
+    text-align:center;height:120px;
+    padding:32px;margin:2px;
+}
+#nav {
+    line-height:100px;font-size:25px;
+    background-color:#d9ffb3;font-color:black;
+    height:400px;text-align:center;
+    width:170px;
+    float:left;spacing:15px;
+    padding:15px; margin:2px;
+}
+#section {
+    width:1044px;height:350px;
+	background-color:#d9d9d9;
+    float:left;text-align:center;
+    padding:40px;margin:2px;
+}
+#footer {
+    background-color:black;
+    color:white;height:12px;
+    clear:both;font-size:25px;
+    text-align:center;
+    padding:5px; margin:2px;
+}
+a
+{text-decoration:none;}
+</style>
+</head>
+<body id="a">
+<div id="header" style="border:blue"><img src="sve3.png" height="150px" width="150px" align="left" title="SVU LOGO" ></img>
+<h1 title="UNIVERSITY & COLLEGE NAME">SRI VENKATESWARA UNIVERSITY <br>DIGITAL PHARMACY</h1>
+<h5 align="right">Tirupati-517502</h5>
+</div>
+
+<div id="nav">
+<b title="USER LOGIN HERE"><u><a href="User.html">User Login</a></u></b><br>
+<b title="BACK TO HOME"><u><a href="Homepage.html">Homepage</a></u></b><br>
+</div>
+
+<div id="section">                                                                                                    
+<h1>Welcome to ADMIN'S Login page</h1><pre>
+USERNAME :<input type="text" maxlength="25" title="ADMIN'S USERNAME" id="Us" placeholder="Username"></input><br>
+PASSWORD :<input type="password"  maxlength="12"  title="ADMIN'S PASSWORD" id="Pa" placeholder="Password"></input><br>
+    <a id="ok"><button onclick="login()">SUBMIT</button></a>      <input type="reset" value="RESET" name="Re"></input><br>
+FOR USER LOGIN/REGISTER <u><a href="User.html">CLICK HERE</a></u>
+</pre>
+</div>
+<script>
+function login()
+{
+	var a=document.getElementById("Us").value;
+	var b=document.getElementById("Pa").value;
+	if(a=="admin"&&b=="admin")
+		{
+		document.getElementById("ok").href="PharmAdmin.html";
+		window.alert("Sucessfully logged...");
+		}
+	else
+		{
+		window.alert("Invalid login credentials,retry again");
+		a.value="";
+		b.value="";
+		window.location="Admin.html";
+		}
+}
+</script>
+<div id="footer"><marquee>DEPARTMENT OF COMPUTER SCIENCE</marquee>
+</div>
+</body>
+</html>
